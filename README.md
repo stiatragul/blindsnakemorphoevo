@@ -14,7 +14,7 @@ Main questions for the study:
 
 ## Data structure
 
-Contents in the data folder is archived as a zip. Unzip and you will see three folders and some files not in any folders. 
+Contents in the data folder is archived as a zip and can be downloaded from Zenodo (10.5281/zenodo.10397831). Unzip and you will see three folders and some files not in any folders. 
 
 **/data/** - files that were manually created
 
