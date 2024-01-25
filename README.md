@@ -14,7 +14,7 @@ Main questions for the study:
 
 ## Data structure
 
-Contents in the data folder is archived as a zip and can be downloaded from Zenodo (10.5281/zenodo.10397831). Unzip and you will see three folders and some files not in any folders. 
+Contents in the data folder is archived as a zip and can be downloaded from Zenodo (10.5281/zenodo.10397830). Unzip and you will see three folders and some files not in any folders. 
 
 **/data/** - files that were manually created
 
@@ -24,18 +24,22 @@ Contents in the data folder is archived as a zip and can be downloaded from Zeno
 
 **/data/worldclim2_30s/** - cropped and merged annual temperature from WorldClim2, soil bulk density from Soil and Landscape Grid of Australia, and Global Aridity Index from Zomer et al. 2022. 
 
+**DREaD/** - contains some files required to replicate DREaD analysis
+
 ## Code/Software
 
 All scripts can be run using open source software. Scripts should be run in order to create necessary files that will be saved in /data/script_generated_data/ for further scripts. R is required to run R scripts (.R).
 
 ### /Code
 
-  - utility/*R - scripts for custom functions. These are sourced in other scripts.
+  - utility/*.R - scripts for custom functions. These are sourced in other scripts.
+  - DREaD/*.R - scripts associated with DREaD analyses
   - 00_linear_measurement_shaperatio.R - script used to account for sexual dimorphism and calculate conventional PCA. Addresses Q1.
   - 01_model_fitting.R - script used to address Q2 and plot visualisations.
   - 02_convergence.R - this script calculates Ct1-4 and C5 scores. Addresses Q3.
   - 02_convergence_model_fitting.R - this script evaluates fit of different evolutionary models to traits. Addresses Q3.
   - 03_niche_enmtools_bias_account.R - calculates ecological niche models (ENMs) for each species using MAXENT. Runs Age-Overlap Correlation tests for geography and ENMs. Partially addresses Q4.
+  - 03_DREaD_Blindsnakes_AS.R - script to run DREaD analysis. 
   - 03_morpho_niche_overlap_plots.R - Runs Age-Overlap Correlation tests for body shape and snout shape. Plots AOCs. Partially addresses Q4. 
   - 04_pairwise_distance_test.R - Binomial tests between sister and non-sister pairs for ENMs and Geographic Range. Partially addresses Q5
   - 04_morpho_pairwise.R -  Binomial tests between sister and non-sister pairs for body shape and snout shape. Partially addresses Q5
