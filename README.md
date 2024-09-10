@@ -14,15 +14,15 @@ Main questions for the study:
 
 ## Data structure
 
-Contents in the data folder is archived as a zip and can be downloaded from Zenodo (10.5281/zenodo.10397830). Unzip and you will see three folders and some files not in any folders. 
+Contents in the data folder is archived as a zip and can be downloaded from Zenodo (for all versions see https://zenodo.org/doi/10.5281/zenodo.10397830). Once you unzip the zipped files, you will see three folders and some files that are no in any folders. 
 
-**/data/** - files that were manually created
+**/data/** - files that were manually created and the phylogeny
 
-**/data/script_generated_data/** - A combination of processed data needed to run the analyses scripts
+**/data/script_generated_data/** - A combination of processed data needed to run the analyses
 
 **/data/dorsal/** - photographs of the head from the dorsal view. These photos were used for placing landmarks and semilandmarks. 
 
-**/data/worldclim2_30s/** - cropped and merged annual temperature from WorldClim2, soil bulk density from Soil and Landscape Grid of Australia, and Global Aridity Index from Zomer et al. 2022. 
+**/data/worldclim2_30s/** - cropped and merged annual temperature from WorldClim2 (Fick and Hijmans 2017), soil bulk density from Soil and Landscape Grid of Australia, and Global Aridity Index from Zomer et al. (2022). 
 
 **DREaD/** - contains some files required to replicate DREaD analysis
 
@@ -38,6 +38,7 @@ All scripts can be run using open source software. Scripts should be run in orde
   - 01_model_fitting.R - script used to address Q2 and plot visualisations.
   - 02_convergence.R - this script calculates Ct1-4 and C5 scores. Addresses Q3.
   - 02_convergence_model_fitting.R - this script evaluates fit of different evolutionary models to traits. Addresses Q3.
+  - 02_convergence_test_simulations.R - simulation studies to show that our phylogeny has sufficient power to detect convergence.
   - 03_niche_enmtools_bias_account.R - calculates ecological niche models (ENMs) for each species using MAXENT. Runs Age-Overlap Correlation tests for geography and ENMs. Partially addresses Q4.
   - 03_DREaD_Blindsnakes_AS.R - script to run DREaD analysis. 
   - 03_morpho_niche_overlap_plots.R - Runs Age-Overlap Correlation tests for body shape and snout shape. Plots AOCs. Partially addresses Q4. 
